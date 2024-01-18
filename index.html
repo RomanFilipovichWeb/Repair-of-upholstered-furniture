@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&family=Raleway:wght@500;700;800&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+	<title>Перетяжка и ремонт мягкой мебели в Санкт-Петербурге</title>
+</head>
+<body>
+
+	<header class="header" id="header">
+		<div class="container">
+			<nav class="navbar">
+				<a href="#header" class="logo">
+					Logo
+				</a>
+				<div class="hamburger toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+				<div class="navbar-links">
+					<ul>
+						<li><a href="#" data-scroll="#works">Наши работы</a></li>
+						<li><a href="#" data-scroll="#advantages">Как мы работаем</a></li>
+						<li><a href="#" data-scroll="#reviews">Отзывы</a></li>
+						<li><a href="#" data-scroll="#contact">Контакты</a></li>
+
+
+						<div class="header-contact header-contact-active">
+							<div class="header-contact__tel">
+								<a href="tel:+78129049999" class="header-contact__phone">+7 (812) 904-99-99</a>
+								<a href="#" class="header__link">Заказать звонок</a>
+							</div>
+						</div>
+					</ul>
+				</div>
+				<div class="header-contact">
+					<div class="header-contact__tel">
+						<a href="tel:+78129049999" class="header-contact__phone">+7 (812) 904-99-99</a>
+						<a href="#" class="header__link js-open-modal" data-modal="2" type="button">Открыть окно 1</a>
+							<div class="modal" data-modal="2">
+							<span class="js-modal-close close">&times;</span>
+							<h3 class="modal-title">Заявка на ремонт мягкой мебели</h3>
+							<p class="modal-text">Оставьте ваши данные и мы вам перезвоним</p>
+							<form action="/">
+							    <input type="name" placeholder="Ваше Имя" class="form__input form__input-pop" name="name">
+							    <input type="number" name="number" class="form__input form__input-pop" placeholder="Введите Ваш телефон">
+							    <button class="form__btn form__btn-pop" type="button">Отправить</button>
+						    </form>
+							</div>
+							<div class="overlay js-overlay-modal"></div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="intro">
+		<div class="container">
+			<div class="intro__content">
+				<h2 class="intro__title animation">Перетяжка и ремонт мягкой мебели в Санкт-Петербурге</h2>
+				<p class="intro__text animation">Сэкономьте до 70% бюджета благодаря ремонту и реставрации любимых предметов интерьера!</p>
+				<button class="btn" id="btn-modal" type="button">Заказать</button>
+				<div class="modals" id="my-modal">
+					<div class="modal-content">
+						<span class="js-modal-close close">&times;</span>
+						<div class="modal-info">
+							<h3 class="modal-title">ОСТАВЬТЕ ЗАЯВКУ</h3>
+						    <p class="modal-text">Введите номер телефона и мы свяжемся с Вами в ближайшее время</p>
+						    <form class="form" action="/">
+							    <input type="number" placeholder="Введите Ваш телефон" class="form__input form__input-pop" name="number">
+							    <input type="email" name="email" class="form__input form__input-pop" placeholder="Введите Ваш email">
+							    <button class="form__btn form__btn-pop" type="button">Оставить заявку</button>
+						    </form>
+						</div>
+					</div>
+					<div class="overlay js-overlay-modal"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section section--advantages" id="advantages">
+		<div class="container">
+			<div class="advantages">
+				<div class="advantages__item">
+					<div class="advantages__inner">
+						<img class="advantages__img" src="images/delivery-truck.png" alt="">
+						<div class="advantages__content">
+							<p class="advantages__text">Бесплатно забираем мебель в мастерскую и привозим обратно к Вам домой или в офис</p>
+						</div>
+					</div>
+					<div class="advantages__inner">
+						<img class="advantages__img" src="images/like.png" alt="">
+						<div class="advantages__content">
+							<p class="advantages__text">За 10 лет работы на рынке ремонта мебели у нас не было ни одного недовольного клиента или просроченного заказа.</p>
+						</div>
+					</div>
+					<div class="advantages__inner">
+						<img class="advantages__img" src="images/phone-call.png" alt="">
+						<div class="advantages__content">
+							<p class="advantages__text">Принимаем Ваши заявки и забираем мебель 7 дней в неделю с 9.00 до 23.00, предоставляем услуги грузчиков бесплатно.</p>
+						</div>
+					</div>
+					<div class="advantages__inner">
+						<img class="advantages__img" src="images/ruler.png" alt="">
+						<div class="advantages__content">
+							<p class="advantages__text">Бесплатный вызов замерщика и дизайнера (при необходимости) к Вам домой или в офис.</p>
+						</div>
+					</div>
+					<div class="advantages__inner">
+						<img class="advantages__img" src="images/house.png" alt="">
+						<div class="advantages__content">
+							<p class="advantages__text">Ремонтируем мебель как на дому, так и в собственном помещении. Внимательно следим за качеством ремонта и реставрации</p>
+						</div>
+					</div>
+				</div>
+				<div class="advantages__item">
+					<form action="/" class="form form--advantages">
+						<h4 class="form__title">Оставьте заявку на консультацию дизайнера</h4>
+						<label class="form__num" for="number">Введите Ваш телефон</label>
+						<input type="number" class="form__input" name="number" placeholder="+7 (___) ___-__-__">
+						<button class="form__btn" type="button">Оставить заявку</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section section--works" id="works">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title animation">Предлагаем все виды работ по восстановлению и ремонту мебели</h2>
+			</div>
+			<div class="works">
+				<div class="works__item">
+					<div class="works__inner">
+						<img src="images/item-1.png" alt="" class="works__img">
+						<div class="works__content">
+							<h4 class="works__title">ЕВРОТАХТА</h4>
+							<p class="works__price">от 4300 руб</p>
+							<a href="#" class="btn js-open-modal" data-modal="1" type="button">Заказать</a>
+							<div class="modal" data-modal="1">
+							<span class="js-modal-close close">&times;</span>
+							<h2 class="modal-title">Бесплатный расчет мебели</h2>
+							<form action="/">
+								<input class="form__input form__input-pop" name="name" placeholder="Ваше имя" type="name">
+								<input class="form__input form__input-pop" name="number" placeholder="Телефон" type="number">
+								<textarea class="form__textarea" placeholder="Описание мебели"></textarea>
+								<button class="form__btn" type="form__btn form__btn-pop">Отправить на расчет</button>
+							</form>
+							</div>
+							<div class="overlay js-overlay-modal"></div>
+						</div
+						>
+					</div>
+				</div>
+
+				<div class="works__item">
+					<div class="works__inner">
+						<img src="images/item-2.png" alt="" class="works__img">
+						<div class="works__content">
+							<h4 class="works__title">ПРЯМЫЕ ДИВАНЫ</h4>
+							<p class="works__price">от 4800 руб</p>
+							<a href="#" class="btn js-open-modal" data-modal="3" type="button">Заказать</a>
+							<div class="modal" data-modal="3">
+							<span class="js-modal-close close">&times;</span>
+							<h2 class="modal-title">Бесплатный расчет мебели</h2>
+							<form action="/">
+								<input class="form__input form__input-pop" name="name" placeholder="Ваше имя" type="name">
+								<input class="form__input form__input-pop" name="number" placeholder="Телефон" type="number">
+								<textarea class="form__textarea" placeholder="Описание мебели"></textarea>
+								<button class="form__btn" type="form__btn form__btn-pop">Отправить на расчет</button>
+							</form>
+							</div>
+							<div class="overlay js-overlay-modal"></div>
+						</div
+						>
+					</div>
+				</div>
+
+				<div class="works__item">
+					<div class="works__inner">
+						<img src="images/item-3.png" alt="" class="works__img">
+						<div class="works__content">
+							<h4 class="works__title">УГЛОВЫЕ ДИВАНЫ</h4>
+							<p class="works__price">от 7800 руб</p>
+							<a href="#" class="btn js-open-modal" data-modal="4" type="button">Заказать</a>
+							<div class="modal" data-modal="4">
+							<span class="js-modal-close close">&times;</span>
+							<h2 class="modal-title">Бесплатный расчет мебели</h2>
+							<form action="/">
+								<input class="form__input form__input-pop" name="name" placeholder="Ваше имя" type="name">
+								<input class="form__input form__input-pop" name="number" placeholder="Телефон" type="number">
+								<textarea class="form__textarea" placeholder="Описание мебели"></textarea>
+								<button class="form__btn" type="form__btn form__btn-pop">Отправить на расчет</button>
+							</form>
+							</div>
+							<div class="overlay js-overlay-modal"></div>
+						</div
+						>
+					</div>
+				</div>
+
+				<div class="works__item">
+					<div class="works__inner">
+						<img src="images/item-4.png" alt="" class="works__img">
+						<div class="works__content">
+							<h4 class="works__title">МОДУЛЬНЫЕ ДИВАНЫ</h4>
+							<p class="works__price">от 1300 руб</p>
+							<a href="#" class="btn js-open-modal" data-modal="3" type="button">Заказать</a>
+							<div class="modal" data-modal="3">
+							<span class="js-modal-close close">&times;</span>
+							<h2 class="modal-title">Бесплатный расчет мебели</h2>
+							<form action="/">
+								<input class="form__input form__input-pop" name="name" placeholder="Ваше имя" type="name">
+								<input class="form__input form__input-pop" name="number" placeholder="Телефон" type="number">
+								<textarea class="form__textarea" placeholder="Описание мебели"></textarea>
+								<button class="form__btn" type="form__btn form__btn-pop">Отправить на расчет</button>
+							</form>
+							</div>
+							<div class="overlay js-overlay-modal"></div>
+						</div
+						>
+					</div>
+				</div>
+
+				<div class="works__item">
+					<div class="works__inner">
+						<img src="images/item-5.png" alt="" class="works__img">
+						<div class="works__content">
+							<h4 class="works__title">КУХОННЫЕ УГОЛКИ</h4>
+							<p class="works__price">от 1700 руб</p>
+							<a href="#" class="btn js-open-modal" data-modal="3" type="button">Заказать</a>
+							<div class="modal" data-modal="3">
+							<span class="js-modal-close close">&times;</span>
+							<h2 class="modal-title">Бесплатный расчет мебели</h2>
+							<form action="/">
+								<input class="form__input form__input-pop" name="name" placeholder="Ваше имя" type="name">
+								<input class="form__input form__input-pop" name="number" placeholder="Телефон" type="number">
+								<textarea class="form__textarea" placeholder="Описание мебели"></textarea>
+								<button class="form__btn" type="form__btn form__btn-pop" type="button">Отправить на расчет</button>
+							</form>
+							</div>
+							<div class="overlay js-overlay-modal"></div>
+						</div
+						>
+					</div>
+				</div>
+
+				<div class="works__item">
+					<div class="works__inner">
+						<img src="images/item-6.png" alt="" class="works__img">
+						<div class="works__content">
+							<h4 class="works__title">КРЕСЛА</h4>
+							<p class="works__price">от 2200 руб</p>
+							<a href="#" class="btn js-open-modal" data-modal="3" type="button">Заказать</a>
+							<div class="modal" data-modal="3">
+							<span class="js-modal-close close">&times;</span>
+							<h2 class="modal-title">Бесплатный расчет мебели</h2>
+							<form action="/">
+								<input class="form__input form__input-pop" name="name" placeholder="Ваше имя" type="name">
+								<input class="form__input form__input-pop" name="number" placeholder="Телефон" type="number">
+								<textarea class="form__textarea" placeholder="Описание мебели"></textarea>
+								<button class="form__btn" type="form__btn form__btn-pop" type="button">Отправить на расчет</button>
+							</form>
+							</div>
+							<div class="overlay js-overlay-modal"></div>
+						</div
+						>
+					</div>
+				</div>
+
+				<div class="works__item">
+					<div class="works__inner">
+						<img src="images/item-7.png" alt="" class="works__img">
+						<div class="works__content">
+							<h4 class="works__title">СТУЛЬЯ</h4>
+							<p class="works__price">от 330 руб</p>
+							<a href="#" class="btn js-open-modal" data-modal="3" type="button">Заказать</a>
+							<div class="modal" data-modal="3">
+							<span class="js-modal-close close">&times;</span>
+							<h2 class="modal-title">Бесплатный расчет мебели</h2>
+							<form action="/">
+								<input class="form__input form__input-pop" name="name" placeholder="Ваше имя" type="name">
+								<input class="form__input form__input-pop" name="number" placeholder="Телефон" type="number">
+								<textarea class="form__textarea" placeholder="Описание мебели"></textarea>
+								<button class="form__btn" type="form__btn form__btn-pop" type="button">Отправить на расчет</button>
+							</form>
+							</div>
+							<div class="overlay js-overlay-modal"></div>
+						</div
+						>
+					</div>
+				</div>
+
+				<div class="works__item">
+					<div class="works__inner">
+						<img src="images/item-8.png" alt="" class="works__img">
+						<div class="works__content">
+							<h4 class="works__title">ИЗГОЛОВЬЕ КРОВАТИ</h4>
+							<p class="works__price">от 2500 руб</p>
+							<a href="#" class="btn js-open-modal" data-modal="3" type="button">Заказать</a>
+							<div class="modal" data-modal="3">
+							<span class="js-modal-close close">&times;</span>
+							<h2 class="modal-title">Бесплатный расчет мебели</h2>
+							<form action="/">
+								<input class="form__input form__input-pop" name="name" placeholder="Ваше имя" type="name">
+								<input class="form__input form__input-pop" name="number" placeholder="Телефон" type="number">
+								<textarea class="form__textarea" placeholder="Описание мебели"></textarea>
+								<button class="form__btn" type="form__btn form__btn-pop" type="button">Отправить на расчет</button>
+							</form>
+							</div>
+							<div class="overlay js-overlay-modal"></div>
+						</div
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="portfolio">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title section__title-cl animation">Портфолио</h2>
+			</div>
+			<div class="portfolio__slider">
+				<div class="portfolio__col">
+					<div class="portfolio__item">
+						<div class="portfolio__col">
+							<div class="portfolio__header">
+								<div class="portfolio__header-text">Было</div>
+								<img class="portfolio__img" src="images/1-min.jpg" alt="">
+							</div>
+						</div>
+						<div class="portfolio__col">
+							<div class="portfolio__header">
+								<div class="portfolio__header-text">Стало</div>
+								<img class="portfolio__img" src="images/1posl-min.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__info">
+						<p class="portfolio__text">Срок перетяжки: 1 день</p>
+						<h3 class="portfolio__title">Перетяжка и ремонт кресла</h3>
+					</div>
+				</div>
+				<div class="portfolio__col">
+					<div class="portfolio__item">
+						<div class="portfolio__col">
+							<div class="portfolio__header">
+								<div class="portfolio__header-text">Было</div>
+								<img class="portfolio__img" src="images/1-min.jpg" alt="">
+							</div>
+						</div>
+						<div class="portfolio__col">
+							<div class="portfolio__header">
+								<div class="portfolio__header-text">Стало</div>
+								<img class="portfolio__img" src="images/1posl-min.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__info">
+						<p class="portfolio__text">Срок перетяжки: 1 день</p>
+						<h3 class="portfolio__title">Перетяжка и ремонт кресла</h3>
+					</div>
+				</div>
+				<div class="portfolio__col">
+					<div class="portfolio__item">
+						<div class="portfolio__col">
+							<div class="portfolio__header">
+								<div class="portfolio__header-text">Было</div>
+								<img class="portfolio__img" src="images/1-min.jpg" alt="">
+							</div>
+						</div>
+						<div class="portfolio__col">
+							<div class="portfolio__header">
+								<div class="portfolio__header-text">Стало</div>
+								<img class="portfolio__img" src="images/1posl-min.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__info">
+						<p class="portfolio__text">Срок перетяжки: 1 день</p>
+						<h3 class="portfolio__title">Перетяжка и ремонт кресла</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title animation">Как заказать ремонт, реставрацию или перетяжку мебели</h2>
+			</div>
+			<div class="order">
+				<div class="order__item">
+					<div class="order__inner">
+						<img src="images/phone-call.png" alt="" class="order__img">
+						<div class="order__content">
+							<p class="order__text">Оставьте заявку на сайте или позвоните по номеру <a href="tel:+78129999999">+7 (812) 999-99-99</a> , для вызова мастера с образцами материалов</p>
+							<div class="order__number">01</div>
+						</div>
+					</div>
+				</div>
+				<div class="order__item">
+					<div class="order__inner">
+						<img src="images/man.png" alt="" class="order__img">
+						<div class="order__content">
+							<p class="order__text">К Вам приезжает мастер, выбирает с Вами обивку, рассчитывает стоимость и предоставляет договор</p>
+							<div class="order__number">02</div>
+						</div>
+					</div>
+				</div>
+				<div class="order__item">
+					<div class="order__inner">
+						<img src="images/contract.png" alt="" class="order__img">
+						<div class="order__content">
+							<p class="order__text">Вы подпишите договор с учетом всех необходимых нюансов</p>
+							<div class="order__number">03</div>
+						</div>
+					</div>
+				</div>
+				<div class="order__item order__item-top">
+					<div class="order__inner">
+						<img src="images/delivery-truck.png" alt="" class="order__img">
+						<div class="order__content">
+							<p class="order__text">Сразу с мастером или в назначенное время приезжает наша машина для перевозки мебели в мастерскую</p>
+							<div class="order__number">04</div>
+						</div>
+					</div>
+				</div>
+				<div class="order__item order__item-top">
+					<div class="order__inner">
+						<img src="images/couch.png" alt="" class="order__img">
+						<div class="order__content">
+							<p class="order__text">Наши специалисты производят перетяжку и при необходимости, ремонт Вашей мебели</p>
+							<div class="order__number">05</div>
+						</div>
+					</div>
+				</div>
+				<div class="order__item order__item-top">
+					<div class="order__inner">
+						<img src="images/handshake.png" alt="" class="order__img">
+						<div class="order__content">
+							<p class="order__text">Когда работа выполнена и проведен контроль качества, мы договариваемся о времени и привозим Вашу обновленную мебель обратно</p>
+							<div class="order__number">06</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="furniture">
+		<div class="container">
+			<div class="furniture__item">
+				<div class="furniture__content">
+					<h3 class="furniture__title">Хотите, чтобы старая мебель опять стала как новая?</h3>
+					<p class="furniture__text">Замерщик бесплатно приедет к Вам и произведет необходимые замеры</p>
+				</div>
+				<div class="furniture__form">
+					<form action="/">
+						<input type="number" class="form__input" name="number" placeholder="Введите Ваш телефон">
+						<button class="form__btn" type="button">Вызвать мастера</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section section--about">
+		<div class="container">
+			<div class="about">
+				<div class="about__item about__photo">
+					<img src="images/delivery-pic.jpg" alt="" class="about__img">
+				</div>
+				<div class="about__item">
+					<div class="about__content">
+						<h4 class="about__subtitle">ДОСТАВКА</h4>
+						<h2 class="about__title">Погрузим и отвезем Вашу мебель в мастерскую бесплатно</h2>
+						<p class="about__text">Сообщите нам удобное для Вас время и точно в срок к дому или офису подъедет автомобиль компании Обиваем - "Авангард". Мы самостоятельно погрузим мебель, нуждающуюся в ремонте, и отвезем в цех. Обратно восстановленная мебель вернется таким же способом - то есть без Вашего непосредственного участия. Вашу мебель разберут, погрузят, отвезут, а затем обновленную привезут и поставят на свое место. Также, все работы, по Вашему желанию, могут проводиться прямо у Вас на дому. Укажите по телефону промокод "Хочу бесплатную доставку"</p>
+						<button class="btn" type="button">Хочу бесплатную доставку</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-slider">
+				<div class="about__col">
+					<div class="about__inner">
+						<div class="about__info">
+							<div class="about__content">
+								<h4 class="about__subtitle">по фабричной технологии
+                                </h4>
+								<h2 class="about__title">4 этапа перетяжки</h2>
+								<h3 class="about__bigtext">1. Начинаем с каркаса</h3>
+								<p class="about__text about__text-mr">Если мебель потеряла форму - мы восстановим объем,
+                                обновив наполнитель. Для надежности и комфорта
+                                используем гипоаллергенные высококачественные
+                                материалы, применяемые на мебельных
+                                производствах</p>
+							</div>
+						</div>
+						<div class="about__photo about__photo-rg">
+							<img src="images/stage-1.jpg" alt="" class="about__img">
+						</div>
+					</div>
+				</div>
+				<div class="about__col">
+					<div class="about__inner">
+						<div class="about__info">
+							<div class="about__content">
+								<h4 class="about__subtitle">по фабричной технологии
+                                </h4>
+								<h2 class="about__title">4 этапа перетяжки</h2>
+								<h3 class="about__bigtext">2. Меняем наполнитель</h3>
+								<p class="about__text about__text-mr">Если мебель потеряла форму - мы восстановим объем,
+                                обновив наполнитель. Для надежности и комфорта
+                                используем гипоаллергенные высококачественные
+                                материалы, применяемые на мебельных
+                                производствах</p>
+							</div>
+						</div>
+						<div class="about__photo about__photo-rg">
+							<img src="images/stage-2.jpg" alt="" class="about__img">
+						</div>
+					</div>
+				</div>
+				<div class="about__col">
+					<div class="about__inner">
+						<div class="about__info">
+							<div class="about__content">
+								<h4 class="about__subtitle">по фабричной технологии
+                                </h4>
+								<h2 class="about__title">4 этапа перетяжки</h2>
+								<h3 class="about__bigtext">
+								3. Защитный слой</h3>
+								<p class="about__text about__text-mr">Если мебель потеряла форму - мы восстановим объем,
+                                обновив наполнитель. Для надежности и комфорта
+                                используем гипоаллергенные высококачественные
+                                материалы, применяемые на мебельных
+                                производствах</p>
+							</div>
+						</div>
+						<div class="about__photo about__photo-rg">
+							<img src="images/stage-3.jpg" alt="" class="about__img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="reviews" id="reviews">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title section__title-cl animation">Наши довольные клиенты</h2>
+			</div>
+			<div class="reviews__slider">
+				<div class="reviews__inner">
+					<img class="reviews__img" src="images/1.png" alt="">
+					<div class="reviews__content">
+						<h3 class="reviews__name">dsadsad</h3>
+						<p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt voluptatibus cumque vel enim, modi eos nulla reiciendis tempore quisquam pariatur mollitia, tempora asperiores quas, error officia nobis ipsum, quam?</p>
+						<p class="reviews__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil et accusantium unde illo vero perspiciatis sunt, aliquid nisi ipsum molestiae adipisci labore eum, esse provident. Quod, sunt? Incidunt, dolorem maiores.</p>
+					</div>
+				</div>
+				<div class="reviews__inner">
+					<img class="reviews__img" src="images/2.png" alt="">
+					<div class="reviews__content">
+						<h3 class="reviews__name">dsadsad</h3>
+						<p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt voluptatibus cumque vel enim, modi eos nulla reiciendis tempore quisquam pariatur mollitia, tempora asperiores quas, error officia nobis ipsum, quam?</p>
+						<p class="reviews__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil et accusantium unde illo vero perspiciatis sunt, aliquid nisi ipsum molestiae adipisci labore eum, esse provident. Quod, sunt? Incidunt, dolorem maiores.</p>
+					</div>
+				</div>
+				<div class="reviews__inner">
+					<img class="reviews__img" src="images/3.png" alt="">
+					<div class="reviews__content">
+						<h3 class="reviews__name">dsadsad</h3>
+						<p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nesciunt voluptatibus cumque vel enim, modi eos nulla reiciendis tempore quisquam pariatur mollitia, tempora asperiores quas, error officia nobis ipsum, quam?</p>
+						<p class="reviews__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil et accusantium unde illo vero perspiciatis sunt, aliquid nisi ipsum molestiae adipisci labore eum, esse provident. Quod, sunt? Incidunt, dolorem maiores.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="section section-product">
+		<div class="container">
+			<div class="products">
+				<div class="products__item">
+					<div class="tabcontent" id="Tab1">
+						<div class="products__inner">
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-3.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-3.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabcontent" id="Tab2">
+						<div class="products__inner">
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-3.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+							<div class="products__col">
+								<img class="products__img" src="images/cloth-4.jpg" alt="">
+								<div class="products__info">
+									<h4 class="products__name">Бархат</h4>
+									<p class="products__num">1п/м: от 659 р.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab">
+						<div class="tab__item">
+							<button class="tablink" onclick="openTab(event, 'Tab1')" id="defaultOpen">
+								<span class="tab__name">1</span>
+							</button>
+						</div>
+						<div class="tab__item">
+							<button class="tablink" onclick="openTab(event, 'Tab2')" type="button">
+								<div class="tab__name">2</div>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="products__item">
+					<div class="products__content">
+						<h4 class="products__subtitle">МАГАЗИН ТКАНЕЙ</h4>
+						<h2 class="products__title">Работаем напрямую с производителями тканей</h2>
+						<p class="products__text">Наша компания работает напрямую с производителями тканей, поэтому цены значительно отличаются от рыночных. Все новинки из текстиля и изысканных комплектов обивочного материала моментально появляются в нашем ЦЕХе. Помимо этого, наши производители предлагают нам обширный ассортимент самого различного обивочного материала. На подбор для клиента всегда найдутся различные цвета, а также материалы. Выше представлены типы тканей, запросите весь каталог тканей, мы вышлем его Вам на почту</p>
+						<a href="#" class="btn js-open-modal" data-modal="3" type="button">Запросить
+                        весь каталог</a> 
+							<div class="modal" data-modal="3">
+								Hello
+							</div>
+
+							<div class="overlay js-overlay-modal"></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="section">
+		<div class="container">
+			<div class="section__header">
+				<h2 class="section__title">Обсудим перетяжку Вашей
+                мебели?</h2>
+				<p class="section__text">Оставьте свои контакты и мы перезвоним Вам сами в течение 5 минут</p>
+			</div>
+			<form action="/" class="form-feedback">
+				<input type="number" class="form__input" name="number" placeholder="Введите Ваш телефон">
+				<input type="number" class="form__input" name="number" placeholder="Введите Ваше имя">
+				<button class="form__btn" type="button">Заказать звонок</button>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer" id="contact">
+		<div class="container">
+			<div class="footer__item">
+				<div class="footer__col footer__col-first">
+					<a href="#" data-scroll="#header" class="footer__logo"Logo>LoGo</a>
+					<p class="footer__text">Дизайн и отделка интерьеров в современном, скандинавском, средиземноморском стиле, стиле современной классики, минимализм, лофт, экостиле, кантри, хай-тек, контемпорари, прованс.</p>
+				</div>
+				<div class="footer__col footer__col-third">
+					<h4 class="footer__title">Контакты</h4>
+					<p class="footer__address">г. Санкт-Петербурге <br> Площадь Карла Маркса 7</p>
+					<a href="tel:+79999999999" class="footer__number">+7 (999) 999 99 99</a>
+					<p class="footer__address">Позвоните нам <br> перед визитом.</p>
+				</div>
+				<div class="footer__col footer__col-second">
+					<h4 class="footer__title">Соц сети</h4>
+					<div class="social">
+						<a href="#" class="social__link">
+							<img src="images/vk.png" alt="">
+						</a>
+						<a href="#" class="social__link">
+							<img src="images/telegram.png" alt="">
+						</a>
+						<a href="#" class="social__link">
+							<img src="images/youtube.png" alt="">
+						</a>
+						<a href="#" class="social__link">
+							<img src="images/facebook.png" alt="">
+						</a>
+					</div>
+					<h4 class="footer__subtitle">Оставьте заявку на бесплатную консультацию</h4>
+					<a href="#" class="footer__link">Заказать Консультацию</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	
+</body>
+</html>
